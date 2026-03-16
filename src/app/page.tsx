@@ -2,12 +2,12 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className="grid grid-cols-12">
-            <div className="lg:col-span-3">
-                {/* Left Sidebar Content */}
-            </div>
-            <div className="lg:col-span-9">
-                {/* Right Side Content */}
+        <div>
+            <aside className="lg:col-span-3 space-y-6">
+                {/* Aside content */}
+            </aside>
+            <div className="lg:col-span-9 w-full min-w-0 space-y-14">
+                {/* Main content */}
             </div>
         </div>
     );
