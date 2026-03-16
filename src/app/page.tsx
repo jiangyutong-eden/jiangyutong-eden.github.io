@@ -118,7 +118,7 @@ export default function HomePage() {
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Publication
               </h2>
-            <div className="divide-y bg-emerald-100">
+            <div className="divide-y divide-emerald-100">
               {publications.map((pub) => (
                 <article
                   key={pub.title}
@@ -143,7 +143,7 @@ export default function HomePage() {
             
                   {/* 文字 */}
                   <div className="min-w-0 flex-[2.8] space-y-1">
-                    <p className="text-[16px] font-medium leading-7 text-slate-900">
+                    <p className="text-[16px] font-medium leading-6 text-slate-900">
                       {pub.title}
                     </p>
             
