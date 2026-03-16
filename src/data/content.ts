@@ -126,7 +126,7 @@ export const education: EducationItem[] = [
     school: "Tongji University",
     degree: "B.A.",
     major: "Media and Communication Design",
-    period: "2020 – 2024",
+    period: "2019 – 2024",
     location: "Shanghai, China",
   },
 ];
@@ -205,36 +205,33 @@ export const publications: Publication[] = [
     thumbnailAlt:
       "A visualization system using metaphor-driven layouts to explore scientific literature.",
   },
-  {
-    title:
-      "Data Visualization of Scientific Literature to Support Exploratory Reading",
-    authors:
-      "X. Yan, Y. Jiang, N. Cao, G. Liu, Y. Shi",
-    venue: "ChinaVis 2024",
-    year: "2024",
-    badge: "ChinaVis 2024",
-    link: "",
-    thumbnailAlt:
-      "A literature visualization interface designed to support exploratory reading and knowledge discovery.",
-  },
 ];
 
 export const experiences: ExperienceItem[] = [
   {
     type: "internship",
-    title: "Research Intern, HCI & Productivity",
-    organization: "Example Research Lab",
-    location: "Remote",
-    period: "Summer 2025",
+    title: "Technology Intern",
+    organization: "Disney",
+    location: "Shanghai, China",
+    period: "2024.02 - 2024.05",
     description:
       "Designed and evaluated interactive prototypes for AI-augmented productivity workflows with knowledge workers.",
   },
   {
     type: "internship",
-    title: "Research Intern, Human-AI Interaction",
-    organization: "Example AI Lab",
-    location: "City, Country",
-    period: "Summer 2024",
+    title: "Product Operation Intern",
+    organization: "Feishu, Bytedance",
+    location: "Shanghai, China",
+    period: "2023.12 - 2024.02",
+    description:
+      "Ran mixed-methods studies to understand how non-expert users adapt to generative interfaces in creative domains.",
+  },
+    {
+    type: "internship",
+    title: "Visualization Design Intern",
+    organization: "iDVX Lab, Tongji University",
+    location: "Shanghai, China",
+    period: "2023.06 - 2024.09",
     description:
       "Ran mixed-methods studies to understand how non-expert users adapt to generative interfaces in creative domains.",
   },
