@@ -74,7 +74,7 @@ export const bio: Bio = {
   researchInterestText:
     "Seeking to leverage my background in interaction design to create AI-empowered educational solutions. I aim to solve practical problems by applying user-centric methodologies to discover unmet needs and translate them into innovative, impactful learning experiences.",
   cvLinks: [
-  { label: "CV (English)", href: "/jiangyutong.github.io/publications/CV-Jiang.pdf" },
+  { label: "CV (English)", href: "/jiangyutong-eden.github.io/publications/CV-Jiang.pdf" },
 ],
   social: [
     {
@@ -149,7 +149,7 @@ export const publications: Publication[] = [
     year: "2026",
     badge: "CHI 2026",
     link: "",
-    thumbnail: "/jiangyutong.github.io/publications/chi26_1.jpg",
+    thumbnail: "/jiangyutong-eden.github.io/publications/chi26_1.jpg",
     thumbnailAlt:
       "A distributed AI system supporting joint attention and communication between visually impaired parents and sighted children during outdoor informal learning.",
   },
@@ -162,7 +162,7 @@ export const publications: Publication[] = [
     year: "2026",
     badge: "CHI 2026",
     link: "",
-    thumbnail:"/jiangyutong.github.io/publications/chi26_2.jpg",
+    thumbnail:"/jiangyutong-eden.github.io/publications/chi26_2.jpg",
     thumbnailAlt:
       "A privacy-aware system that detects and manages sensitive information during web-agent interactions.",
   },
@@ -175,7 +175,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "SIGGRAPH Asia Posters 2025",
     link: "https://dl.acm.org/doi/full/10.1145/3757374.3771477",
-    thumbnail:"/jiangyutong.github.io/publications/siggraph25.png",
+    thumbnail:"/jiangyutong-eden.github.io/publications/siggraph25.png",
     thumbnailAlt:
       "An affective visualization system highlighting emotional experiences of subway harassment victims.",
   },
@@ -188,7 +188,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "CSCW Companion 2025",
     link: "https://dl.acm.org/doi/full/10.1145/3715070.3749238",
-    thumbnail:"/jiangyutong.github.io/publications/cscw25.jpg",
+    thumbnail:"/jiangyutong-eden.github.io/publications/cscw25.jpg",
     thumbnailAlt:
       "A study investigating communication and attention challenges in informal learning between visually impaired parents and sighted children.",
   },
@@ -201,7 +201,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "CHI EA 2025",
     link: "https://dl.acm.org/doi/full/10.1145/3706599.3720280",
-    thumbnail:"/jiangyutong.github.io/publications/chiea25.png",
+    thumbnail:"/jiangyutong-eden.github.io/publications/chiea25.png",
     thumbnailAlt:
       "A visualization system using metaphor-driven layouts to explore scientific literature.",
   },
