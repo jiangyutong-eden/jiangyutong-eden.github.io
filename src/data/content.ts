@@ -54,10 +54,10 @@ export interface ExperienceItem {
 
 export const bio: Bio = {
   name: "Your Name",
-  title: "Ph.D. Student in Human–Computer Interaction",
-  affiliation: "School of Computer Science, Example University",
-  location: "City, Country",
-  email: "you@example.edu",
+  title: "M.Eng. Candidate in AI and Data Visualization",
+  affiliation: "College of Design and Innovation, Tongji University",
+  location: "Shanghai, China",
+  email: "2433545@tongji.edu.cn",
   shortBio:
     "I am a human–computer interaction researcher focusing on interactive systems, creativity support tools, and AI-augmented interfaces. My work combines qualitative studies with prototype-driven experimentation.",
   researchInterestText:
@@ -69,12 +69,12 @@ export const bio: Bio = {
   social: [
     {
       label: "Email",
-      href: "mailto:you@example.edu",
+      href: "2433545@tongji.edu.cn",
       platform: "email",
     },
     {
       label: "Google Scholar",
-      href: "https://scholar.google.com/",
+      href: "https://scholar.google.com/citations?hl=en&user=xmcbIsIAAAAJ",
       platform: "google-scholar",
     },
     {
@@ -100,32 +100,77 @@ export const researchInterests: string[] = [
 ];
 
 export const publications: Publication[] = [
-  {
+{
     title:
-      "CoSketch: Lightweight AI-Assisted Sketching Workflows for Early-Stage Interface Design",
-    authors: "Your Name, Collaborator A, Collaborator B",
-    venue: "CHI 2026 (to appear)",
+      "Bridging Visual Asymmetry: Exploring AI-Mediated Communication Support for Parents with Visual Impairments and Their Sighted Children in Outdoor Informal Learning",
+    authors:
+      "Y. Jiang, Z. Zhang, J. Xu, Q. Zheng, Q. Guo, ... Q. Wang",
+    venue: "CHI Conference on Human Factors in Computing Systems (CHI)",
     year: "2026",
     badge: "CHI 2026",
-    link: "https://example.com/paper",
-    thumbnailAlt: "A schematic of AI-assisted sketching for interface design.",
+    link: "",
+    thumbnailAlt:
+      "A distributed AI system supporting joint attention and communication between visually impaired parents and sighted children during outdoor informal learning.",
   },
   {
     title:
-      "PromptScaffold: Structuring Prompts to Support Novice Designers in Exploring the Generative Design Space",
-    authors: "Your Name, Collaborator C",
-    venue: "UIST 2025",
-    year: "2025",
-    badge: "UIST 2025",
-    link: "https://example.com/promptscaffold",
+      "PrivWeb: Unobtrusive and Content-aware Privacy Protection for Web Agents",
+    authors:
+      "S. Zhang*, Y. Jiang*, R. Ma, Y. Yang, M. Xu, Z. Huang, ... H. Li (*equal contribution)",
+    venue: "CHI Conference on Human Factors in Computing Systems (CHI)",
+    year: "2026",
+    badge: "CHI 2026",
+    link: "",
+    thumbnailAlt:
+      "A privacy-aware system that detects and manages sensitive information during web-agent interactions.",
   },
   {
     title:
-      "Understanding How Practitioners Appropriate Large Language Models in Everyday Productivity Workflows",
-    authors: "Your Name, Collaborator D, Collaborator E",
-    venue: "CSCW 2025",
+      "When Stars Shine through Silence: Affective Visualization as Empowerment for Victims of Subway Harassment",
+    authors:
+      "Y. Jiang, X. Yan, C. Zheng, Y. Shi, Q. Chen, N. Cao",
+    venue: "SIGGRAPH Asia Posters",
     year: "2025",
-    badge: "CSCW 2025",
+    badge: "SIGGRAPH Asia Posters 2025",
+    link: "",
+    thumbnailAlt:
+      "An affective visualization system highlighting emotional experiences of subway harassment victims.",
+  },
+  {
+    title:
+      "I Can Only Guess Where She’s Looking: Challenges and Design Strategies for Supporting Outdoor Informal Learning Between Parents with Visual Impairments and Their Sighted Children",
+    authors:
+      "Y. Jiang*, Q. Zheng*, Z. Zhang*, Q. Guo*, J. Xu*, S. Xu, G. Liu (*equal contribution)",
+    venue: "CSCW Companion",
+    year: "2025",
+    badge: "CSCW Companion 2025",
+    link: "",
+    thumbnailAlt:
+      "A study investigating communication and attention challenges in informal learning between visually impaired parents and sighted children.",
+  },
+  {
+    title:
+      "City of Wander: Visualizing Scientific Literature for Knowledge Exploration Using Visual Metaphors",
+    authors:
+      "G. Liu, Y. Jiang, X. Yan, N. Cao, Y. Shi",
+    venue: "CHI Extended Abstracts",
+    year: "2025",
+    badge: "CHI EA 2025",
+    link: "",
+    thumbnailAlt:
+      "A visualization system using metaphor-driven layouts to explore scientific literature.",
+  },
+  {
+    title:
+      "Data Visualization of Scientific Literature to Support Exploratory Reading",
+    authors:
+      "X. Yan, Y. Jiang, N. Cao, G. Liu, Y. Shi",
+    venue: "ChinaVis",
+    year: "2024",
+    badge: "ChinaVis 2024",
+    link: "",
+    thumbnailAlt:
+      "A literature visualization interface designed to support exploratory reading and knowledge discovery.",
   },
 ];
 
@@ -150,17 +195,51 @@ export const experiences: ExperienceItem[] = [
   },
   {
     type: "award",
-    title: "Best Paper Honorable Mention",
-    organization: "ACM CHI",
+    title: "1st Place – Visual Data Storytelling Contest",
+    organization: "IEEE PacificVis",
     year: "2025",
     description:
-      "For work on interactive tools that scaffold novice designers in exploring generative design spaces.",
+      "First place in the PacificVis Visual Data Storytelling Contest for an innovative visualization project communicating complex data narratives.",
   },
   {
     type: "award",
-    title: "Graduate Research Fellowship",
-    organization: "Example Funding Agency",
+    title: "2nd Place – Design Factory Global Challenge",
+    organization: "Design Factory Global Network",
+    year: "2025",
+    description:
+      "Second place in the international Design Factory Global Challenge for interdisciplinary innovation and design problem solving.",
+  },
+  {
+    type: "award",
+    title: "Annual Selected Works",
+    organization: "China Data Content Conference",
+    year: "2025",
+    description:
+      "Selected as one of the annual outstanding works for contributions in data-driven visual communication and storytelling.",
+  },
+  {
+    type: "award",
+    title: "National Scholarship",
+    organization: "Ministry of Education of China",
+    year: "2025",
+    description:
+      "Top national scholarship awarded to outstanding university students for academic excellence and research achievements.",
+  },
+  {
+    type: "award",
+    title: "Outstanding Graduate",
+    organization: "Shanghai Municipal Education Commission",
     year: "2024",
+    description:
+      "Recognized as an Outstanding Graduate of Shanghai for comprehensive academic performance and contributions during undergraduate studies.",
+  },
+  {
+    type: "award",
+    title: "National Scholarship",
+    organization: "Ministry of Education of China",
+    year: "2022",
+    description:
+      "National-level scholarship awarded to top-performing undergraduate students in recognition of academic excellence.",
   },
 ];
 
