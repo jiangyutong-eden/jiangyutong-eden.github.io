@@ -8,17 +8,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
-      <header className="sticky top-0 z-20 bg-emerald-100 py-3 backdrop-blur">
-       <nav className="flex w-full justify-end gap-6 px-8 text-sm font-medium text-slate-700">
-          <a href="#publications" className="hover:text-slate-900">
-            Publication
-          </a>
-          <a href="#internship" className="hover:text-slate-900">
-            Internship
-          </a>
-          <a href="#awards" className="hover:text-slate-900">
-            Awards
-          </a>
+     <header className="sticky top-0 z-20 -mx-4 bg-emerald-100 py-3 backdrop-blur lg:-mx-8">
+        <nav className="flex w-full justify-end gap-6 px-8 text-sm font-medium text-slate-700">
+          <a href="#publications" className="hover:text-slate-900">Publication</a>
+          <a href="#education" className="hover:text-slate-900">Education</a>
+          <a href="#internship" className="hover:text-slate-900">Internship</a>
+          <a href="#awards" className="hover:text-slate-900">Awards</a>
         </nav>
       </header>
 
@@ -217,46 +212,58 @@ export default function HomePage() {
                 ))}
               </ul>
             </section>
-
   
             {/* Internship */}
             <section id="internship">
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
-                Internship
-              </h2>
-              <ul className="space-y-3 text-sm text-slate-700">
-                {internships.map((item: ExperienceItem, idx: number) => (
-                  <li key={idx}>
-                    <span className="font-medium text-slate-900">{item.title}</span>
-                    {item.organization && (
-                      <span className="text-slate-600"> · {item.organization}</span>
-                    )}
-                    {(item.period || item.year) && (
-                      <span className="mt-0.5 block text-xs text-slate-500">
-                        {item.period ?? item.year}
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </section>
+                <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+                  Internship
+                </h2>
+                <ul className="space-y-4 text-sm text-slate-700">
+                  {internships.map((item: ExperienceItem, idx: number) => (
+                    <li key={idx}>
+                      <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+                        <div>
+                          <p className="font-medium text-slate-900">
+                            {item.title}
+                            {item.organization && (
+                              <span className="text-slate-600"> · {item.organization}</span>
+                            )}
+                          </p>
+                        </div>
+                        <div className="text-sm text-slate-500 sm:text-right">
+                          <p>{item.period ?? item.year}</p>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
 
             {/* Honors and Awards */}
-            <section id="awards">
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
-                Honors and Awards
-              </h2>
-              <ul className="space-y-2 text-sm text-slate-700">
-                {awards.map((item: ExperienceItem, idx: number) => (
-                  <li key={idx}>
-                    <span className="font-medium text-slate-900">{item.title}</span>
-                    {item.organization && (
-                      <span className="text-slate-600"> · {item.organization}</span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </section>
+          <section id="awards">
+            <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+              Honors and Awards
+            </h2>
+            <ul className="space-y-4 text-sm text-slate-700">
+              {awards.map((item: ExperienceItem, idx: number) => (
+                <li key={idx}>
+                  <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <p className="font-medium text-slate-900">
+                        {item.title}
+                        {item.organization && (
+                          <span className="text-slate-600"> · {item.organization}</span>
+                        )}
+                      </p>
+                    </div>
+                    <div className="text-sm text-slate-500 sm:text-right">
+                      <p>{item.period ?? item.year}</p>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
           </div>
         </div>
       </div>
