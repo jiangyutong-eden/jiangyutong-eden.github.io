@@ -8,8 +8,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
-      <header className="sticky top-0 z-20 bg-amber-100 py-3 backdrop-blur">
-        <nav className="mx-auto flex max-w-7xl justify-end gap-6 px-2 text-sm font-medium text-slate-700">
+      <header className="sticky top-0 z-20 bg-emerald-100 py-3 backdrop-blur">
+       <nav className="flex w-full justify-end gap-6 px-8 text-sm font-medium text-slate-700">
           <a href="#publications" className="hover:text-slate-900">
             Publication
           </a>
@@ -109,33 +109,37 @@ export default function HomePage() {
                 Publication
               </h2>
             <div className="divide-y divide-amber-100">
-              {publications.map((pub, index) => (
+              {publications.map((pub) => (
                 <article
                   key={pub.title}
-                  className="flex w-full items-start gap-5 py-8"
+                  className="flex w-full items-start gap-6 py-10"
                 >
-                  <div className="min-w-0 flex-[1.1]">
-                    <div className="aspect-[4/3] w-full overflow-hidden rounded bg-slate-200">
+                  {/* 图片 */}
+                  <div className="min-w-0 flex-[1.2]">
+                    <div className="aspect-[16/9] w-full overflow-hidden rounded bg-white border border-slate-200">
                       {pub.thumbnail ? (
                         <img
                           src={pub.thumbnail}
                           alt={pub.thumbnailAlt || pub.title}
-                          className="h-full w-full object-cover"
+                          className="h-full w-full object-contain p-2"
                         />
                       ) : (
-                        <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
+                        <div className="flex h-full w-full items-center justify-center text-xs text-slate-400">
                           thumb
                         </div>
                       )}
                     </div>
                   </div>
             
-                  <div className="min-w-0 flex-[2.9] space-y-1">
+                  {/* 文字 */}
+                  <div className="min-w-0 flex-[2.8] space-y-1">
                     <p className="text-[16px] font-medium leading-7 text-slate-900">
                       {pub.title}
                     </p>
             
-                    <p className="text-sm text-slate-600">{pub.venue}</p>
+                    <p className="text-sm text-slate-600">
+                      {pub.venue}
+                    </p>
             
                     <p className="text-sm text-slate-500">
                       {pub.authors.split(", ").map((author, i, arr) => (
