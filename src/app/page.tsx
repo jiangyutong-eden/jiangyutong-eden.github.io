@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { bio, news, aboutMeText, researchInterestText, publications, internships, awards, education } from "@/data/content";
 import type { ExperienceItem, EducationItem } from "@/data/content";
 import { SocialIcon } from "@/components/social-icons";
-const basePath = "/jiangyutong.github.io/publications";
+
 
 export default function HomePage() {
   return (
@@ -26,7 +26,7 @@ export default function HomePage() {
               {/* avatar */}
               <div className="aspect-square w-full max-w-[180px] overflow-hidden rounded-full">
                 <img
-                  src="/jiangyutong.github.io/publications/avatar.jpg"
+                  src="/jiangyutong-eden.github.io/publications/avatar.jpg"
                   alt="Yutong Jiang"
                   className="h-full w-full object-cover"
                 />
@@ -53,7 +53,7 @@ export default function HomePage() {
                 </a>
             
                 <a
-                  href="/jiangyutong.github.io/publications/CV-Jiang.pdf"
+                  href="/jiangyutong-eden.github.io/publications/CV-Jiang.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-emerald-50"
