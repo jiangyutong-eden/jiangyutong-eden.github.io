@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { bio, news, researchInterestText, publications, internships, awards } from "@/data/content";
 import type { ExperienceItem } from "@/data/content";
 import { SocialIcon } from "@/components/social-icons";
-const basePath = "/jiangyutong.github.io";
+const basePath = "/jiangyutong.github.io/publications";
 
 export default function HomePage() {
   return (
