@@ -64,9 +64,8 @@ export const bio: Bio = {
   researchInterestText:
     "Seeking to leverage my background in interaction design to create AI-empowered educational solutions. I aim to solve practical problems by applying user-centric methodologies to discover unmet needs and translate them into innovative, impactful learning experiences.",
   cvLinks: [
-    { label: "CV (English)", href: "#" },
-    { label: "CV (中文)", href: "#" },
-  ],
+  { label: "CV (English)", href: "/jiangyutong.github.io/publications/CV-Jiang.pdf" },
+],
   social: [
     {
       label: "Email",
@@ -86,10 +85,20 @@ export const bio: Bio = {
   ],
 };
 
-export const news: NewsItem[] = [
-  { date: "2026.03", title: "Two papers accepted to CHI 2026!", text: "One paper on AI-assisted prototyping was accepted to CHI 2026." },
-  { date: "2025.12", title: "Attended SIGGRAPH Asia 2025 in Hong Kong, China." },
-  { date: "2025.10", title: "Attended CSCW 2025 in Bergen, Norway.", text: "Human-centered evaluation of generative models." },
+export const news = [
+  {
+    date: "2026.03",
+    title: "Excited to share that two of our papers were accepted at CHI 2026.",
+  },
+  {
+    date: "2025.12",
+    title: "Attended SIGGRAPH Asia 2025 in Hong Kong.",
+  },
+  {
+    date: "2025.10",
+    title: "Attended CSCW 2025 in Bergen, Norway.",
+    text: "It was a wonderful opportunity to learn from inspiring work in the community.",
+  },
 ];
 
 export const researchInterests: string[] = [
