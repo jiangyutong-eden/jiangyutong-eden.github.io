@@ -136,7 +136,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "SIGGRAPH Asia Posters 2025",
     link: "",
-    thumbnail:"/jiangyutong.github.io/publications/cscw25.png",
+    thumbnail:"/jiangyutong.github.io/publications/siggraph25.png",
     thumbnailAlt:
       "An affective visualization system highlighting emotional experiences of subway harassment victims.",
   },
