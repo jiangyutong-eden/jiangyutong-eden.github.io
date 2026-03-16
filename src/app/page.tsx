@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import { bio, news, researchInterestText, publications, internships, awards } from "@/data/content";
-import type { ExperienceItem } from "@/data/content";
+import { bio, news, aboutMeText, researchInterestText, publications, internships, awards, education } from "@/data/content";
+import type { ExperienceItem, EducationItem } from "@/data/content";
 import { SocialIcon } from "@/components/social-icons";
 const basePath = "/jiangyutong.github.io/publications";
 
@@ -80,6 +80,16 @@ export default function HomePage() {
 
           {/* 右侧内容 */}
           <div className="w-full min-w-0 space-y-16 lg:col-span-8">
+            {/* About Me */}
+                <section id="about">
+                  <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+                    About Me
+                  </h2>
+                  <div className="text-[15px] leading-7 text-slate-700">
+                    {aboutMeText}
+                  </div>
+                </section>
+            
             {/* Research Interest */}
             <section>
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
@@ -170,6 +180,33 @@ export default function HomePage() {
             </div>
             </section>
 
+          
+            {/* Education */}
+            <section id="education">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+                Education
+              </h2>
+              <ul className="space-y-4 text-sm text-slate-700">
+                {education.map((item: EducationItem, idx: number) => (
+                  <li key={idx}>
+                    <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+                      <div>
+                        <p className="font-medium text-slate-900">{item.school}</p>
+                        <p className="text-slate-700">
+                          {item.degree} in {item.major}
+                        </p>
+                      </div>
+                      <div className="text-sm text-slate-500 sm:text-right">
+                        <p>{item.period}</p>
+                        <p>{item.location}</p>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+  
             {/* Internship */}
             <section id="internship">
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
