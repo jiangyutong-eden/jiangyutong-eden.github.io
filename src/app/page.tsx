@@ -85,7 +85,7 @@ export default function HomePage() {
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Research Interest
               </h2>
-              <div className="text-sm leading-8 text-slate-700">{researchInterestText}</div>
+              <div className="text-base leading-6 text-slate-700">{researchInterestText}</div>
             </section>
 
             {/* News */}
