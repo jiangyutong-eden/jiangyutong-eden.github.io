@@ -15,7 +15,7 @@ export default function HomePage() {
         </nav>
       </header>
 
-      <div className="mx-auto max-w-6xl px-4 py-8 lg:py-12">
+      <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8 lg:py-12">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12 lg:px-0">
           {/* 左侧：头像 + email + CV + icons，居中对齐 */}
           <aside className="space-y-6 lg:col-span-4">
