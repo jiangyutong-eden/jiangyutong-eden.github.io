@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
-      <header className="sticky top-0 z-20 bg-white/95 py-3 backdrop-blur">
+      <header className="sticky top-0 z-20 bg-amber-100 py-3 backdrop-blur">
         <nav className="mx-auto flex max-w-7xl justify-end gap-6 px-2 text-sm font-medium text-slate-700">
           <a href="#publications" className="hover:text-slate-900">
             Publication
@@ -108,58 +108,62 @@ export default function HomePage() {
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Publication
               </h2>
-              <div className="space-y-6">
-                {publications.map((pub) => (
-                  <article key={pub.title} className="flex w-full items-start gap-5">
-                    <div className="min-w-0 flex-[1.4]">
-                      <div className="aspect-[16/9] w-full overflow-hidden rounded-md bg-white">
-                        {pub.thumbnail ? (
-                          <img
-                            src={pub.thumbnail}
-                            alt={pub.thumbnailAlt || pub.title}
-                            className="h-full w-full object-contain"
-                          />
-                        ) : (
-                          <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
-                            thumb
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="min-w-0 flex-[2.6] space-y-1">
-                      <p className="text-[15px] font-medium leading-6 text-slate-900">
-                        {pub.title}
-                      </p>
-                      <p className="text-xs text-slate-600">{pub.venue}</p>
-
-                      <p className="text-xs text-slate-500">
-                        {pub.authors.split(", ").map((author, i, arr) => (
-                          <span key={i}>
-                            {author === "Yutong Jiang" || author === "Y. Jiang" ? (
-                              <strong>{author}</strong>
-                            ) : (
-                              author
-                            )}
-                            {i < arr.length - 1 && ", "}
-                          </span>
-                        ))}
-                      </p>
-
-                      {pub.link && (
-                        <a
-                          href={pub.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-1 text-xs text-slate-700 hover:underline"
-                        >
-                          Link <ArrowUpRight className="h-3 w-3" />
-                        </a>
+            <div className="divide-y divide-amber-100">
+              {publications.map((pub, index) => (
+                <article
+                  key={pub.title}
+                  className="flex w-full items-start gap-5 py-8"
+                >
+                  <div className="min-w-0 flex-[1.1]">
+                    <div className="aspect-[4/3] w-full overflow-hidden rounded bg-slate-200">
+                      {pub.thumbnail ? (
+                        <img
+                          src={pub.thumbnail}
+                          alt={pub.thumbnailAlt || pub.title}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
+                          thumb
+                        </div>
                       )}
                     </div>
-                  </article>
-                ))}
-              </div>
+                  </div>
+            
+                  <div className="min-w-0 flex-[2.9] space-y-1">
+                    <p className="text-[16px] font-medium leading-7 text-slate-900">
+                      {pub.title}
+                    </p>
+            
+                    <p className="text-sm text-slate-600">{pub.venue}</p>
+            
+                    <p className="text-sm text-slate-500">
+                      {pub.authors.split(", ").map((author, i, arr) => (
+                        <span key={i}>
+                          {author === "Yutong Jiang" || author === "Y. Jiang" ? (
+                            <strong>{author}</strong>
+                          ) : (
+                            author
+                          )}
+                          {i < arr.length - 1 && ", "}
+                        </span>
+                      ))}
+                    </p>
+            
+                    {pub.link && (
+                      <a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-sm text-slate-700 hover:underline"
+                      >
+                        Link <ArrowUpRight className="h-3 w-3" />
+                      </a>
+                    )}
+                  </div>
+                </article>
+              ))}
+            </div>
             </section>
 
             {/* Internship */}
