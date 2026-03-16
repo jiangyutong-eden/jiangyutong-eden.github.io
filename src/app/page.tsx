@@ -85,7 +85,7 @@ export default function HomePage() {
                   <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                     About Me
                   </h2>
-                  <div className="text-[15px] leading-7 text-slate-700">
+                  <div className="text-[15px] leading-6 text-slate-700">
                     {aboutMeText}
                   </div>
                 </section>
@@ -95,7 +95,7 @@ export default function HomePage() {
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Research Interest
               </h2>
-              <div className="text-base leading-6 text-slate-700">{researchInterestText}</div>
+              <div className="text-[15px] leading-6 text-slate-700">{researchInterestText}</div>
             </section>
 
             {/* News */}
@@ -118,7 +118,7 @@ export default function HomePage() {
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Publication
               </h2>
-            <div className="divide-y divide-amber-100">
+            <div className="divide-y bg-emerald-100">
               {publications.map((pub) => (
                 <article
                   key={pub.title}
@@ -126,12 +126,12 @@ export default function HomePage() {
                 >
                   {/* 图片 */}
                   <div className="min-w-0 flex-[1.2]">
-                    <div className="aspect-[16/9] w-full overflow-hidden rounded bg-white border border-slate-200">
+                  <div className="aspect-[16/9] w-full overflow-hidden rounded">
                       {pub.thumbnail ? (
                         <img
                           src={pub.thumbnail}
                           alt={pub.thumbnailAlt || pub.title}
-                          className="h-full w-full object-contain p-2"
+                          className="h-full w-full object-cover"
                         />
                       ) : (
                         <div className="flex h-full w-full items-center justify-center text-xs text-slate-400">
