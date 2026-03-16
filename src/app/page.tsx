@@ -61,20 +61,32 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div className="mt-4 flex flex-wrap justify-center gap-2 text-slate-600">
-                {bio.social.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1 px-2.5 py-1 text-xs text-slate-600 hover:text-slate-900"
-                  >
-                    <SocialIcon platform={link.platform} className="h-3.5 w-3.5" />
-                    <span className="sr-only">{link.label}</span>
-                  </a>
-                ))}
-              </div>
+           <div className="mt-4 flex flex-wrap justify-center gap-2">
+              <a
+                href={`mailto:${bio.email}`}
+                className="rounded-md border border-slate-200 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
+              >
+                Email
+              </a>
+            
+              <a
+                href="/jiangyutong.github.io/publications/CV-Jiang.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-md border border-slate-200 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
+              >
+                CV
+              </a>
+            
+              <a
+                href="https://scholar.google.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-md border border-slate-200 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
+              >
+                Scholar
+              </a>
+            </div>
             </div>
           </aside>
 
