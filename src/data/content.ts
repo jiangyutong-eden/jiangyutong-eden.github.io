@@ -110,7 +110,7 @@ export const publications: Publication[] = [
     year: "2026",
     badge: "CHI 2026",
     link: "",
-    thumbnail:"/publications/chi26_1.jpg",
+    thumbnail: "/jiangyutong.github.io/publications/chi26_1.jpg",
     thumbnailAlt:
       "A distributed AI system supporting joint attention and communication between visually impaired parents and sighted children during outdoor informal learning.",
   },
