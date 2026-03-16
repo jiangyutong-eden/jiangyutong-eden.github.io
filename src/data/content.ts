@@ -39,6 +39,7 @@ export interface Publication {
   year: string;
   thumbnailAlt?: string;
   link?: string;
+  thumbnail?: string
   badge?: string;
 }
 
