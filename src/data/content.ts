@@ -123,7 +123,7 @@ export const publications: Publication[] = [
     year: "2026",
     badge: "CHI 2026",
     link: "",
-    thumbnail:"/publications/chi26_1.jpg",
+    thumbnail:"/jiangyutong.github.io/publications/chi26_2.jpg",
     thumbnailAlt:
       "A privacy-aware system that detects and manages sensitive information during web-agent interactions.",
   },
@@ -136,6 +136,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "SIGGRAPH Asia Posters 2025",
     link: "",
+    thumbnail:"/jiangyutong.github.io/publications/cscw25.png",
     thumbnailAlt:
       "An affective visualization system highlighting emotional experiences of subway harassment victims.",
   },
@@ -148,6 +149,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "CSCW Companion 2025",
     link: "",
+    thumbnail:"/jiangyutong.github.io/publications/cscw25.jpg",
     thumbnailAlt:
       "A study investigating communication and attention challenges in informal learning between visually impaired parents and sighted children.",
   },
@@ -160,6 +162,7 @@ export const publications: Publication[] = [
     year: "2025",
     badge: "CHI EA 2025",
     link: "",
+    thumbnail:"/jiangyutong.github.io/publications/chiea25.png",
     thumbnailAlt:
       "A visualization system using metaphor-driven layouts to explore scientific literature.",
   },
