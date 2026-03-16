@@ -53,7 +53,7 @@ export interface ExperienceItem {
 }
 
 export const bio: Bio = {
-  name: "Your Name",
+  name: "Yutong Jiang",
   title: "M.Eng. Candidate in AI and Data Visualization",
   affiliation: "College of Design and Innovation, Tongji University",
   location: "Shanghai, China",
