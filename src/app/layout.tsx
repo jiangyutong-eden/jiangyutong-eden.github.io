@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name – Academic Homepage",
+  title: "Yutong Jiang - Personal Website",
   description: "Minimal, data-driven academic homepage.",
 };
 
