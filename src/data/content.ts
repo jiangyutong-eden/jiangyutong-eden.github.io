@@ -12,6 +12,7 @@ export interface SocialLink {
   platform: SocialPlatform;
 }
 
+
 export interface Bio {
   name: string;
   title?: string;
@@ -30,6 +31,15 @@ export interface NewsItem {
   date: string;
   title: string;
   text?: string;
+}
+
+
+export interface EducationItem {
+  school: string;
+  degree: string;
+  major: string;
+  period: string;
+  location: string;
 }
 
 export interface Publication {
@@ -85,6 +95,9 @@ export const bio: Bio = {
   ],
 };
 
+export const aboutMeText =
+  "I am a second-year master's student in Artificial Intelligence and Data Design at Tongji University. My work lies at the intersection of human-computer interaction, AI-mediated communication, and inclusive design, with a particular interest in educational technologies and collaborative learning experiences.";
+
 export const news = [
   {
     date: "2026.03",
@@ -98,6 +111,23 @@ export const news = [
     date: "2025.10",
     title: "Attended CSCW 2025 in Bergen, Norway.",
     text: "It was a wonderful opportunity to learn from inspiring work in the community.",
+  },
+];
+
+export const education: EducationItem[] = [
+  {
+    school: "Tongji University",
+    degree: "M.Eng.",
+    major: "Artificial Intelligence and Data Design",
+    period: "2024 – 2027",
+    location: "Shanghai, China",
+  },
+  {
+    school: "Tongji University",
+    degree: "B.A.",
+    major: "Media and Communication Design",
+    period: "2020 – 2024",
+    location: "Shanghai, China",
   },
 ];
 
