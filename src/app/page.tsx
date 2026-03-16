@@ -106,11 +106,19 @@ export default function HomePage() {
                 {publications.map((pub) => (
                   <article key={pub.title} className="flex w-full items-start gap-5">
                     <div className="min-w-0 flex-[1.1]">
-                      <div className="aspect-[4/3] w-full overflow-hidden rounded-md bg-slate-200">
-                        <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
-                          thumb
-                        </div>
-                      </div>
+                    <div className="aspect-[4/3] w-full overflow-hidden rounded bg-slate-200">
+  {pub.thumbnail ? (
+    <img
+      src={pub.thumbnail}
+      alt={pub.thumbnailAlt || pub.title}
+      className="h-full w-full object-cover"
+    />
+  ) : (
+    <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
+      thumb
+    </div>
+  )}
+</div>
                     </div>
 
                     <div className="min-w-0 flex-[2.9] space-y-1">
