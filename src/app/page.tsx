@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { bio, news, researchInterestText, publications, internships, awards } from "@/data/content";
 import type { ExperienceItem } from "@/data/content";
 import { SocialIcon } from "@/components/social-icons";
+const basePath = "/jiangyutong.github.io";
 
 export default function HomePage() {
   return (
@@ -28,7 +29,7 @@ export default function HomePage() {
             <div className="flex flex-col items-center p-6 text-center">
               <div className="aspect-square w-full max-w-[160px] overflow-hidden rounded-full bg-slate-200">
                   <img
-                    src="/avatar.jpg"
+                    src={`${basePath}/avatar.jpg`}
                     alt="Yutong Jiang"
                     className="h-full w-full object-cover"
                   />
