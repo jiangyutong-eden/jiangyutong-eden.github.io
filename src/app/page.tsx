@@ -9,9 +9,15 @@ export default function HomePage() {
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
       <header className="sticky top-0 z-20 bg-white/95 py-3 backdrop-blur">
         <nav className="mx-auto flex max-w-7xl justify-end gap-6 px-2 text-sm font-medium text-slate-700">
-          <a href="#publications" className="hover:text-slate-900">Publication</a>
-          <a href="#internship" className="hover:text-slate-900">Internship</a>
-          <a href="#awards" className="hover:text-slate-900">Awards</a>
+          <a href="#publications" className="hover:text-slate-900">
+            Publication
+          </a>
+          <a href="#internship" className="hover:text-slate-900">
+            Internship
+          </a>
+          <a href="#awards" className="hover:text-slate-900">
+            Awards
+          </a>
         </nav>
       </header>
 
@@ -77,9 +83,7 @@ export default function HomePage() {
               <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Research Interest
               </h2>
-              <div className="text-sm leading-8 text-slate-700">
-                {researchInterestText}
-              </div>
+              <div className="text-sm leading-8 text-slate-700">{researchInterestText}</div>
             </section>
 
             {/* News */}
@@ -105,23 +109,23 @@ export default function HomePage() {
               <div className="space-y-6">
                 {publications.map((pub) => (
                   <article key={pub.title} className="flex w-full items-start gap-5">
-                    <div className="min-w-0 flex-[1.1]">
-                    <div className="aspect-[4/3] w-full overflow-hidden rounded bg-slate-200">
-  {pub.thumbnail ? (
-    <img
-      src={pub.thumbnail}
-      alt={pub.thumbnailAlt || pub.title}
-      className="h-full w-full object-cover"
-    />
-  ) : (
-    <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
-      thumb
-    </div>
-  )}
-</div>
+                    <div className="min-w-0 flex-[1.4]">
+                      <div className="aspect-[16/9] w-full overflow-hidden rounded-md bg-white">
+                        {pub.thumbnail ? (
+                          <img
+                            src={pub.thumbnail}
+                            alt={pub.thumbnailAlt || pub.title}
+                            className="h-full w-full object-contain"
+                          />
+                        ) : (
+                          <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
+                            thumb
+                          </div>
+                        )}
+                      </div>
                     </div>
 
-                    <div className="min-w-0 flex-[2.9] space-y-1">
+                    <div className="min-w-0 flex-[2.6] space-y-1">
                       <p className="text-[15px] font-medium leading-7 text-slate-900">
                         {pub.title}
                       </p>
