@@ -26,7 +26,7 @@ export default function HomePage() {
               {/* avatar */}
               <div className="aspect-square w-full max-w-[180px] overflow-hidden rounded-full">
                 <img
-                  src="/jiangyutong.github.io/avatar.jpg"
+                  src="/jiangyutong.github.io/publications/avatar.jpg"
                   alt="Yutong Jiang"
                   className="h-full w-full object-cover"
                 />
