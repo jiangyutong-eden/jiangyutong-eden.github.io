@@ -128,7 +128,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="min-w-0 flex-[2.6] space-y-1">
-                      <p className="text-[15px] font-medium leading-7 text-slate-900">
+                      <p className="text-[15px] font-medium leading-6 text-slate-900">
                         {pub.title}
                       </p>
                       <p className="text-xs text-slate-600">{pub.venue}</p>
