@@ -7,30 +7,35 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
-      <header className="sticky top-0 z-20 bg-white py-3">
-        <nav className="mx-auto flex max-w-6xl justify-end gap-6 px-4 text-sm font-medium text-slate-700">
+      <header className="sticky top-0 z-20 bg-white/95 py-3 backdrop-blur">
+        <nav className="mx-auto flex max-w-7xl justify-end gap-6 px-2 text-sm font-medium text-slate-700">
           <a href="#publications" className="hover:text-slate-900">Publication</a>
           <a href="#internship" className="hover:text-slate-900">Internship</a>
           <a href="#awards" className="hover:text-slate-900">Awards</a>
         </nav>
       </header>
 
-      <div className="mx-auto max-w-7xl px-6 py-8 lg:px-8 lg:py-12">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12 lg:px-0">
-          {/* 左侧：头像 + email + CV + icons，居中对齐 */}
-          <aside className="space-y-6 lg:col-span-4">
+      <div className="mx-auto max-w-7xl px-2 py-8 lg:py-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
+          {/* 左侧：头像 + email + CV + icons，居中对齐；大屏 sticky */}
+          <aside className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
             <div className="flex flex-col items-center p-6 text-center">
-              <div className="aspect-square w-full max-w-[150px] overflow-hidden rounded-full bg-slate-200">
+              <div className="aspect-square w-full max-w-[160px] overflow-hidden rounded-full bg-slate-200">
                 <div className="flex h-full w-full items-center justify-center text-4xl font-semibold text-slate-500">
                   {initialsFromName(bio.name)}
                 </div>
               </div>
+
               <p className="mt-4 text-xl font-semibold tracking-tight text-slate-900">
                 Yutong Jiang
               </p>
+
               <div className="mt-5 space-y-2 text-sm">
                 <p>
-                  <a href={`mailto:${bio.email}`} className="text-slate-800 underline-offset-2 hover:underline">
+                  <a
+                    href={`mailto:${bio.email}`}
+                    className="text-slate-800 underline-offset-2 hover:underline"
+                  >
                     email
                   </a>
                 </p>
@@ -47,6 +52,7 @@ export default function HomePage() {
                   </p>
                 ))}
               </div>
+
               <div className="mt-4 flex flex-wrap justify-center gap-2 text-slate-600">
                 {bio.social.map((link) => (
                   <a
@@ -64,52 +70,68 @@ export default function HomePage() {
             </div>
           </aside>
 
-          {/* 右侧：与导航右边缘(Awards)对齐 */}
-          <div className="w-full min-w-0 space-y-14 lg:col-span-8">
-            {/* Research Interest — 大块段落 */}
+          {/* 右侧内容 */}
+          <div className="w-full min-w-0 space-y-16 lg:col-span-8">
+            {/* Research Interest */}
             <section>
-              <h2 className="mb-3 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Research Interest
               </h2>
-              <div className="p-4 text-sm leading-relaxed text-slate-700">
+              <div className="text-sm leading-8 text-slate-700">
                 {researchInterestText}
               </div>
             </section>
 
-            {/* News — 日期 + 标题 */}
+            {/* News */}
             <section id="news">
-              <h2 className="mb-3 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 News
               </h2>
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {news.map((item, idx) => (
-                  <div key={idx} className="flex gap-3 text-sm">
-                    <span className="w-20 flex-none text-slate-500">{item.date}</span>
+                  <div key={idx} className="flex gap-4 text-sm">
+                    <span className="w-24 flex-none text-slate-500">{item.date}</span>
                     <span className="text-slate-800">{item.title}</span>
                   </div>
                 ))}
               </div>
             </section>
 
-            {/* Publication — 小图 + 标题 / 会议 / 作者 */}
+            {/* Publication */}
             <section id="publications">
-              <h2 className="mb-3 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Publication
               </h2>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {publications.map((pub) => (
-                  <article key={pub.title} className="flex w-full items-start gap-4 p-0">
-                    <div className="min-w-0 flex-[1]">
-                      <div className="aspect-[4/3] w-full overflow-hidden rounded bg-slate-200">
+                  <article key={pub.title} className="flex w-full items-start gap-5">
+                    <div className="min-w-0 flex-[1.1]">
+                      <div className="aspect-[4/3] w-full overflow-hidden rounded-md bg-slate-200">
                         <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
                           thumb
                         </div>
                       </div>
                     </div>
-                    <div className="min-w-0 flex-[3] space-y-0.5">
-                      <p className="font-medium text-slate-900">{pub.title}</p>
+
+                    <div className="min-w-0 flex-[2.9] space-y-1">
+                      <p className="text-[15px] font-medium leading-7 text-slate-900">
+                        {pub.title}
+                      </p>
                       <p className="text-xs text-slate-600">{pub.venue}</p>
-                      <p className="text-xs text-slate-500">{pub.authors}</p>
+
+                      <p className="text-xs text-slate-500">
+                        {pub.authors.split(", ").map((author, i, arr) => (
+                          <span key={i}>
+                            {author === "Yutong Jiang" || author === "Y. Jiang" ? (
+                              <strong>{author}</strong>
+                            ) : (
+                              author
+                            )}
+                            {i < arr.length - 1 && ", "}
+                          </span>
+                        ))}
+                      </p>
+
                       {pub.link && (
                         <a
                           href={pub.link}
@@ -128,16 +150,20 @@ export default function HomePage() {
 
             {/* Internship */}
             <section id="internship">
-              <h2 className="mb-3 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Internship
               </h2>
-              <ul className="space-y-2 text-sm text-slate-700">
+              <ul className="space-y-3 text-sm text-slate-700">
                 {internships.map((item: ExperienceItem, idx: number) => (
                   <li key={idx}>
                     <span className="font-medium text-slate-900">{item.title}</span>
-                    {item.organization && <span className="text-slate-600"> · {item.organization}</span>}
+                    {item.organization && (
+                      <span className="text-slate-600"> · {item.organization}</span>
+                    )}
                     {(item.period || item.year) && (
-                      <span className="block text-xs text-slate-500">{item.period ?? item.year}</span>
+                      <span className="mt-0.5 block text-xs text-slate-500">
+                        {item.period ?? item.year}
+                      </span>
                     )}
                   </li>
                 ))}
@@ -146,14 +172,16 @@ export default function HomePage() {
 
             {/* Honors and Awards */}
             <section id="awards">
-              <h2 className="mb-3 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
                 Honors and Awards
               </h2>
-              <ul className="space-y-1 text-sm text-slate-700">
+              <ul className="space-y-2 text-sm text-slate-700">
                 {awards.map((item: ExperienceItem, idx: number) => (
                   <li key={idx}>
                     <span className="font-medium text-slate-900">{item.title}</span>
-                    {item.organization && <span className="text-slate-600"> · {item.organization}</span>}
+                    {item.organization && (
+                      <span className="text-slate-600"> · {item.organization}</span>
+                    )}
                   </li>
                 ))}
               </ul>
