@@ -21,67 +21,57 @@ export default function HomePage() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           {/* 左侧：头像 + email + CV + icons，居中对齐；大屏 sticky */}
           <aside className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
-            <div className="flex flex-col items-center p-6 text-center">
-              <div className="aspect-square w-full max-w-[160px] overflow-hidden rounded-full bg-slate-200">
-                  <img
-                    src={`${basePath}/avatar.jpg`}
-                    alt="Yutong Jiang"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              <p className="mt-4 text-xl font-semibold tracking-tight text-slate-900">
+           <div className="flex flex-col items-center p-6 text-center">
+
+              {/* avatar */}
+              <div className="aspect-square w-full max-w-[180px] overflow-hidden rounded-full">
+                <img
+                  src="/jiangyutong.github.io/avatar.jpg"
+                  alt="Yutong Jiang"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            
+              {/* name */}
+              <p className="mt-5 text-2xl font-semibold tracking-tight text-slate-900 font-serif">
                 Yutong Jiang
               </p>
-
-              <div className="mt-5 space-y-2 text-sm">
-                <p>
-                  <a
-                    href={`mailto:${bio.email}`}
-                    className="text-slate-800 underline-offset-2 hover:underline"
-                  >
-                    email
-                  </a>
-                </p>
-                {bio.cvLinks.map((cv) => (
-                  <p key={cv.label}>
-                    <a
-                      href={cv.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-slate-800 underline-offset-2 hover:underline"
-                    >
-                      {cv.label}
-                    </a>
-                  </p>
-                ))}
+            
+              {/* affiliation */}
+              <p className="mt-1 text-sm text-slate-600">
+                M.S. Student · Tongji University
+              </p>
+            
+              {/* buttons */}
+              <div className="mt-5 flex flex-wrap justify-center gap-3">
+            
+                <a
+                  href={`mailto:${bio.email}`}
+                  className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-emerald-50"
+                >
+                  Email
+                </a>
+            
+                <a
+                  href="/jiangyutong.github.io/publications/CV-Jiang.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-emerald-50"
+                >
+                  CV
+                </a>
+            
+                <a
+                  href="https://scholar.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-emerald-50"
+                >
+                  Scholar
+                </a>
+            
               </div>
-
-           <div className="mt-4 flex flex-wrap justify-center gap-2">
-              <a
-                href={`mailto:${bio.email}`}
-                className="rounded-md border border-slate-200 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
-              >
-                Email
-              </a>
             
-              <a
-                href="/jiangyutong.github.io/publications/CV-Jiang.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-md border border-slate-200 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
-              >
-                CV
-              </a>
-            
-              <a
-                href="https://scholar.google.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-md border border-slate-200 px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
-              >
-                Scholar
-              </a>
-            </div>
             </div>
           </aside>
 
@@ -89,7 +79,7 @@ export default function HomePage() {
           <div className="w-full min-w-0 space-y-16 lg:col-span-8">
             {/* About Me */}
                 <section id="about">
-                  <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+                  <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
                     About Me
                   </h2>
                   <div className="text-[15px] leading-6 text-slate-700">
@@ -99,7 +89,7 @@ export default function HomePage() {
             
             {/* Research Interest */}
             <section>
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
                 Research Interest
               </h2>
               <div className="text-[15px] leading-6 text-slate-700">{researchInterestText}</div>
@@ -107,7 +97,7 @@ export default function HomePage() {
 
             {/* News */}
             <section id="news">
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
                 News
               </h2>
               <div className="space-y-2.5">
@@ -122,7 +112,7 @@ export default function HomePage() {
 
             {/* Publication */}
             <section id="publications">
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
                 Publication
               </h2>
             <div className="divide-y divide-emerald-100">
@@ -190,7 +180,7 @@ export default function HomePage() {
           
             {/* Education */}
             <section id="education">
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
                 Education
               </h2>
               <ul className="space-y-4 text-sm text-slate-700">
@@ -215,7 +205,7 @@ export default function HomePage() {
   
             {/* Internship */}
             <section id="internship">
-                <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+                <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
                   Internship
                 </h2>
                 <ul className="space-y-4 text-sm text-slate-700">
@@ -241,7 +231,7 @@ export default function HomePage() {
 
             {/* Honors and Awards */}
           <section id="awards">
-            <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black">
+            <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
               Honors and Awards
             </h2>
             <ul className="space-y-4 text-sm text-slate-700">
