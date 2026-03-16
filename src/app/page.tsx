@@ -8,17 +8,17 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
       <header className="sticky top-0 z-20 bg-white py-3">
-        <nav className="mx-auto flex max-w-4xl justify-end gap-6 px-4 text-sm font-medium text-slate-700">
+        <nav className="mx-auto flex max-w-6xl justify-end gap-6 px-4 text-sm font-medium text-slate-700">
           <a href="#publications" className="hover:text-slate-900">Publication</a>
           <a href="#internship" className="hover:text-slate-900">Internship</a>
           <a href="#awards" className="hover:text-slate-900">Awards</a>
         </nav>
       </header>
 
-      <div className="mx-auto max-w-4xl px-4 py-8 lg:py-12">
+      <div className="mx-auto max-w-6xl px-4 py-8 lg:py-12">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12 lg:px-0">
           {/* 左侧：头像 + email + CV + icons，居中对齐 */}
-          <aside className="lg:col-span-4 space-y-6">
+          <aside className="space-y-6 lg:col-span-4">
             <div className="flex flex-col items-center p-6 text-center">
               <div className="aspect-square w-full max-w-[150px] overflow-hidden rounded-full bg-slate-200">
                 <div className="flex h-full w-full items-center justify-center text-4xl font-semibold text-slate-500">
@@ -36,7 +36,12 @@ export default function HomePage() {
                 </p>
                 {bio.cvLinks.map((cv) => (
                   <p key={cv.label}>
-                    <a href={cv.href} target="_blank" rel="noreferrer" className="text-slate-800 underline-offset-2 hover:underline">
+                    <a
+                      href={cv.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-slate-800 underline-offset-2 hover:underline"
+                    >
                       {cv.label}
                     </a>
                   </p>
@@ -60,7 +65,7 @@ export default function HomePage() {
           </aside>
 
           {/* 右侧：与导航右边缘(Awards)对齐 */}
-          <div className="lg:col-span-8 w-full min-w-0 space-y-14">
+          <div className="w-full min-w-0 space-y-14 lg:col-span-8">
             {/* Research Interest — 大块段落 */}
             <section>
               <h2 className="mb-3 text-base font-semibold uppercase tracking-wider text-black">
@@ -94,9 +99,11 @@ export default function HomePage() {
               <div className="space-y-4">
                 {publications.map((pub) => (
                   <article key={pub.title} className="flex w-full items-start gap-4 p-0">
-                    <div className="flex-[1] min-w-0">
+                    <div className="min-w-0 flex-[1]">
                       <div className="aspect-[4/3] w-full overflow-hidden rounded bg-slate-200">
-                        <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">thumb</div>
+                        <div className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
+                          thumb
+                        </div>
                       </div>
                     </div>
                     <div className="min-w-0 flex-[3] space-y-0.5">
@@ -104,7 +111,12 @@ export default function HomePage() {
                       <p className="text-xs text-slate-600">{pub.venue}</p>
                       <p className="text-xs text-slate-500">{pub.authors}</p>
                       {pub.link && (
-                        <a href={pub.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-slate-700 hover:underline">
+                        <a
+                          href={pub.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1 text-xs text-slate-700 hover:underline"
+                        >
                           Link <ArrowUpRight className="h-3 w-3" />
                         </a>
                       )}
