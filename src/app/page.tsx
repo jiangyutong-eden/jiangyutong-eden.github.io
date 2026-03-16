@@ -27,11 +27,12 @@ export default function HomePage() {
           <aside className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
             <div className="flex flex-col items-center p-6 text-center">
               <div className="aspect-square w-full max-w-[160px] overflow-hidden rounded-full bg-slate-200">
-                <div className="flex h-full w-full items-center justify-center text-4xl font-semibold text-slate-500">
-                  {initialsFromName(bio.name)}
+                  <img
+                    src="/avatar.jpg"
+                    alt="Yutong Jiang"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
-              </div>
-
               <p className="mt-4 text-xl font-semibold tracking-tight text-slate-900">
                 Yutong Jiang
               </p>
