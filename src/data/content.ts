@@ -121,6 +121,7 @@ export const publications: Publication[] = [
     year: "2026",
     badge: "CHI 2026",
     link: "",
+    thumbnail:"/publications/chi26_1.jpg",
     thumbnailAlt:
       "A privacy-aware system that detects and manages sensitive information during web-agent interactions.",
   },
