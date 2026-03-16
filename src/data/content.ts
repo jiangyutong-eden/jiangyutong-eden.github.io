@@ -62,7 +62,7 @@ export const bio: Bio = {
   shortBio:
     "I am a human–computer interaction researcher focusing on interactive systems, creativity support tools, and AI-augmented interfaces. My work combines qualitative studies with prototype-driven experimentation.",
   researchInterestText:
-    "My research focuses on human–computer interaction (HCI), creativity support tools, and human–AI collaboration. I am interested in interactive data visualization, design tools, and prototyping methods that combine qualitative studies with iterative design.",
+    "Seeking to leverage my background in interaction design to create AI-empowered educational solutions. I aim to solve practical problems by applying user-centric methodologies to discover unmet needs and translate them into innovative, impactful learning experiences.",
   cvLinks: [
     { label: "CV (English)", href: "#" },
     { label: "CV (中文)", href: "#" },
@@ -87,9 +87,9 @@ export const bio: Bio = {
 };
 
 export const news: NewsItem[] = [
-  { date: "2024.1.2", title: "New paper accepted to CHI 2026.", text: "One paper on AI-assisted prototyping was accepted to CHI 2026." },
-  { date: "2025.10", title: "Research internship at Example Research Lab.", text: "Started a research internship, working on multimodal creativity support tools." },
-  { date: "2025.06", title: "Invited talk at Example HCI Seminar.", text: "Human-centered evaluation of generative models." },
+  { date: "2026.03", title: "Two papers accepted to CHI 2026!", text: "One paper on AI-assisted prototyping was accepted to CHI 2026." },
+  { date: "2025.12", title: "Attended SIGGRAPH Asia 2025 in Hong Kong, China." },
+  { date: "2025.10", title: "Attended CSCW 2025 in Bergen, Norway.", text: "Human-centered evaluation of generative models." },
 ];
 
 export const researchInterests: string[] = [
@@ -135,7 +135,7 @@ export const publications: Publication[] = [
     venue: "SIGGRAPH Asia Posters 2025",
     year: "2025",
     badge: "SIGGRAPH Asia Posters 2025",
-    link: "",
+    link: "https://dl.acm.org/doi/full/10.1145/3757374.3771477",
     thumbnail:"/jiangyutong.github.io/publications/siggraph25.png",
     thumbnailAlt:
       "An affective visualization system highlighting emotional experiences of subway harassment victims.",
@@ -148,7 +148,7 @@ export const publications: Publication[] = [
     venue: "CSCW Companion 2025",
     year: "2025",
     badge: "CSCW Companion 2025",
-    link: "",
+    link: "https://dl.acm.org/doi/full/10.1145/3715070.3749238",
     thumbnail:"/jiangyutong.github.io/publications/cscw25.jpg",
     thumbnailAlt:
       "A study investigating communication and attention challenges in informal learning between visually impaired parents and sighted children.",
@@ -161,7 +161,7 @@ export const publications: Publication[] = [
     venue: "CHI Extended Abstracts 2025",
     year: "2025",
     badge: "CHI EA 2025",
-    link: "",
+    link: "https://dl.acm.org/doi/full/10.1145/3706599.3720280",
     thumbnail:"/jiangyutong.github.io/publications/chiea25.png",
     thumbnailAlt:
       "A visualization system using metaphor-driven layouts to explore scientific literature.",
