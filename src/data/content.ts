@@ -105,7 +105,7 @@ export const publications: Publication[] = [
       "Bridging Visual Asymmetry: Exploring AI-Mediated Communication Support for Parents with Visual Impairments and Their Sighted Children in Outdoor Informal Learning",
     authors:
       "Y. Jiang, Z. Zhang, J. Xu, Q. Zheng, Q. Guo, ... Q. Wang",
-    venue: "CHI Conference on Human Factors in Computing Systems (CHI)",
+    venue: "CHI Conference on Human Factors in Computing Systems (CHI) 2026",
     year: "2026",
     badge: "CHI 2026",
     link: "",
@@ -117,7 +117,7 @@ export const publications: Publication[] = [
       "PrivWeb: Unobtrusive and Content-aware Privacy Protection for Web Agents",
     authors:
       "S. Zhang*, Y. Jiang*, R. Ma, Y. Yang, M. Xu, Z. Huang, ... H. Li (*equal contribution)",
-    venue: "CHI Conference on Human Factors in Computing Systems (CHI)",
+    venue: "CHI Conference on Human Factors in Computing Systems (CHI) 2026",
     year: "2026",
     badge: "CHI 2026",
     link: "",
@@ -129,7 +129,7 @@ export const publications: Publication[] = [
       "When Stars Shine through Silence: Affective Visualization as Empowerment for Victims of Subway Harassment",
     authors:
       "Y. Jiang, X. Yan, C. Zheng, Y. Shi, Q. Chen, N. Cao",
-    venue: "SIGGRAPH Asia Posters",
+    venue: "SIGGRAPH Asia Posters 2025",
     year: "2025",
     badge: "SIGGRAPH Asia Posters 2025",
     link: "",
@@ -141,7 +141,7 @@ export const publications: Publication[] = [
       "I Can Only Guess Where She’s Looking: Challenges and Design Strategies for Supporting Outdoor Informal Learning Between Parents with Visual Impairments and Their Sighted Children",
     authors:
       "Y. Jiang*, Q. Zheng*, Z. Zhang*, Q. Guo*, J. Xu*, S. Xu, G. Liu (*equal contribution)",
-    venue: "CSCW Companion",
+    venue: "CSCW Companion 2025",
     year: "2025",
     badge: "CSCW Companion 2025",
     link: "",
@@ -153,7 +153,7 @@ export const publications: Publication[] = [
       "City of Wander: Visualizing Scientific Literature for Knowledge Exploration Using Visual Metaphors",
     authors:
       "G. Liu, Y. Jiang, X. Yan, N. Cao, Y. Shi",
-    venue: "CHI Extended Abstracts",
+    venue: "CHI Extended Abstracts 2025",
     year: "2025",
     badge: "CHI EA 2025",
     link: "",
@@ -165,7 +165,7 @@ export const publications: Publication[] = [
       "Data Visualization of Scientific Literature to Support Exploratory Reading",
     authors:
       "X. Yan, Y. Jiang, N. Cao, G. Liu, Y. Shi",
-    venue: "ChinaVis",
+    venue: "ChinaVis 2024",
     year: "2024",
     badge: "ChinaVis 2024",
     link: "",
