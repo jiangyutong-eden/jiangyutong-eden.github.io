@@ -53,7 +53,7 @@ export default function HomePage() {
                 </a>
             
                 <a
-                  href="/jiangyutong-eden.github.io/publications/CV-Jiang.pdf"
+                  href="/publications/CV-Jiang.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-emerald-50"
@@ -62,7 +62,7 @@ export default function HomePage() {
                 </a>
             
                 <a
-                  href="https://scholar.google.com/"
+                  href="https://scholar.google.com/citations?user=xmcbIsIAAAAJ&hl=en&oi=ao"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-700 hover:bg-emerald-50"
