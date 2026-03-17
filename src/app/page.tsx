@@ -111,71 +111,72 @@ export default function HomePage() {
             </section>
 
             {/* Publication */}
-            <section id="publications">
-              <h2 className="mb-4 text-base font-semibold uppercase tracking-wider text-black font-serif">
+               <section id="publications">
+              <h2 className="mb-4 font-serif text-base font-semibold uppercase tracking-wider text-black">
                 Publication
               </h2>
-            <div className="divide-y divide-emerald-100">
-              {publications.map((pub) => (
-                <article
-                  key={pub.title}
-                  className="flex w-full items-start gap-6 py-10"
-                >
-                  {/* 图片 */}
-                  <div className="min-w-0 flex-[1.2]">
-                  <div className="aspect-[16/9] w-full overflow-hidden rounded">
-                      {pub.thumbnail ? (
-                        <img
-                          src={pub.thumbnail}
-                          alt={pub.thumbnailAlt || pub.title}
-                          className="h-full w-full object-cover"
-                        />
-                      ) : (
-                        <div className="flex h-full w-full items-center justify-center text-xs text-slate-400">
-                          thumb
-                        </div>
+            
+              <div className="divide-y divide-emerald-100">
+                {publications.map((pub) => (
+                  <article
+                    key={pub.title}
+                    className="flex flex-col gap-4 py-10 md:flex-row md:items-start md:gap-6"
+                  >
+                    {/* 图片 */}
+                    <div className="w-full md:min-w-0 md:flex-[1.2]">
+                      <div className="aspect-[16/9] w-full overflow-hidden rounded">
+                        {pub.thumbnail ? (
+                          <img
+                            src={pub.thumbnail}
+                            alt={pub.thumbnailAlt || pub.title}
+                            className="h-full w-full object-cover"
+                          />
+                        ) : (
+                          <div className="flex h-full w-full items-center justify-center text-xs text-slate-400">
+                            thumb
+                          </div>
+                        )}
+                      </div>
+                    </div>
+            
+                    {/* 文字 */}
+                    <div className="w-full min-w-0 space-y-1 md:flex-[2.8]">
+                      <p className="text-[16px] font-medium leading-6 text-slate-900">
+                        {pub.title}
+                      </p>
+            
+                      <p className="text-sm text-slate-600">
+                        {pub.venue}
+                      </p>
+            
+                      <p className="text-sm text-slate-500">
+                        {pub.authors.split(", ").map((author, i, arr) => (
+                          <span key={i}>
+                            {author === "Yutong Jiang" || author === "Y. Jiang" ? (
+                              <strong>{author}</strong>
+                            ) : (
+                              author
+                            )}
+                            {i < arr.length - 1 && ", "}
+                          </span>
+                        ))}
+                      </p>
+            
+                      {pub.link && (
+                        <a
+                          href={pub.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1 text-sm text-slate-700 hover:underline"
+                        >
+                          Link <ArrowUpRight className="h-3 w-3" />
+                        </a>
                       )}
                     </div>
-                  </div>
-            
-                  {/* 文字 */}
-                  <div className="min-w-0 flex-[2.8] space-y-1">
-                    <p className="text-[16px] font-medium leading-6 text-slate-900">
-                      {pub.title}
-                    </p>
-            
-                    <p className="text-sm text-slate-600">
-                      {pub.venue}
-                    </p>
-            
-                    <p className="text-sm text-slate-500">
-                      {pub.authors.split(", ").map((author, i, arr) => (
-                        <span key={i}>
-                          {author === "Yutong Jiang" || author === "Y. Jiang" ? (
-                            <strong>{author}</strong>
-                          ) : (
-                            author
-                          )}
-                          {i < arr.length - 1 && ", "}
-                        </span>
-                      ))}
-                    </p>
-            
-                    {pub.link && (
-                      <a
-                        href={pub.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1 text-sm text-slate-700 hover:underline"
-                      >
-                        Link <ArrowUpRight className="h-3 w-3" />
-                      </a>
-                    )}
-                  </div>
-                </article>
-              ))}
-            </div>
-            </section>
+                  </article>
+                ))}
+              </div>
+</section>
 
           
             {/* Education */}
