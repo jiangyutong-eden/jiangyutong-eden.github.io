@@ -1,19 +1,10 @@
 /** @type {import('next').NextConfig} */
-// 你的站点在子路径：https://jiangyytong126-arch.github.io/jiangyutong.github.io/
-const basePath = '/jiangyutong.github.io';
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig = {
-  output: 'export',
+  output: "export",
+  reactStrictMode: true,
   images: {
     unoptimized: true,
   },
-  reactStrictMode: true,
-  trailingSlash: true,
-  basePath,
-  // 静态资源必须带子路径，否则 GitHub Pages 上会 404
-  assetPrefix: isProd ? `https://jiangyytong126-arch.github.io${basePath}` : '',
 };
 
 export default nextConfig;
-
