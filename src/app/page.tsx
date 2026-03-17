@@ -8,16 +8,16 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* 顶部导航：仅右上角 Publication | Internship | Awards */}
-     <header className="sticky top-0 z-20 -mx-4 bg-emerald-100 py-3 backdrop-blur lg:-mx-8">
-        <nav className="flex w-full justify-end gap-6 px-8 text-sm font-medium text-slate-700">
-          <a href="#publications" className="hover:text-slate-900">Publication</a>
-          <a href="#education" className="hover:text-slate-900">Education</a>
-          <a href="#internship" className="hover:text-slate-900">Internship</a>
-          <a href="#awards" className="hover:text-slate-900">Awards</a>
-        </nav>
-      </header>
+    <header className="fixed inset-x-0 top-0 z-50 bg-emerald-100 py-3 backdrop-blur">
+      <nav className="flex w-full justify-end gap-6 px-8 text-sm font-medium text-slate-700">
+        <a href="#publications" className="hover:text-slate-900">Publication</a>
+        <a href="#education" className="hover:text-slate-900">Education</a>
+        <a href="#internship" className="hover:text-slate-900">Internship</a>
+        <a href="#awards" className="hover:text-slate-900">Awards</a>
+      </nav>
+    </header>
 
-      <div className="mx-auto max-w-7xl px-2 py-8 lg:py-12">
+    <div className="mx-auto max-w-7xl px-2 pt-24 pb-8 lg:pt-28 lg:pb-12">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           {/* 左侧：头像 + email + CV + icons，居中对齐；大屏 sticky */}
           <aside className="lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
@@ -26,7 +26,7 @@ export default function HomePage() {
               {/* avatar */}
               <div className="aspect-square w-full max-w-[180px] overflow-hidden rounded-full">
                 <img
-                  src="/jiangyutong-eden.github.io/publications/avatar.jpg"
+                  src="/publications/avatar.jpg"
                   alt="Yutong Jiang"
                   className="h-full w-full object-cover"
                 />
